@@ -10,7 +10,7 @@ default_agruments = {
 }
 
 with DAG(
-    dag_id='bash_operator_demo',
+    dag_id='DAG_with_bash_operator',
     default_args=default_agruments,
     description='This is first DAG',
     start_date=datetime(2022, 7, 19, 14),

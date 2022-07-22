@@ -1,3 +1,4 @@
+## truy cập vào container scheduler
 docker exec -it /container_scheduler_id/ bash
 
 airflow dags backfill -s /start_date/ -e /end_date/ /dag_id/   (start_date trước ngày start_date trong DAG vẫn chạy)

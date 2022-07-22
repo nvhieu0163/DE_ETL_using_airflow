@@ -18,7 +18,7 @@ matplotlib==x.x.x
 FROM apache/airflow:2.0.1 </br>
 COPY requirements.txt /requirements.txt </br>
 RUN pip install --user --upgrade pip  (update pip version to get the lastest version) </br>
-RUN pup install --no-cache-dir --user -r /requirements.txt () </br>
+RUN pup install --no-cache-dir --user -r /requirements.txt </br>
 
 ## Chạy command interminal
 **Docker xây một image sử dụng Dockerfile ngay trong thư mục hiện tại, đặt tên là extending_airflow, version: latest**

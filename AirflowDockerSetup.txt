@@ -21,3 +21,5 @@ docker-compose up airflow-init (khởi tạo)
 docker-compose up -d 	(in detached mode, runnings container in background, sau đó chỉ việc mở localhost:8080)
 
 docker-compose down -v  (có nghĩa là không chỉ tắt airflow container mà còn removes volumnes đã tạo)
+
+docker-compose down --volumes --rmi all (To stop and delete containers, delete volumes with database data and download images)

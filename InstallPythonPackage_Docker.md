@@ -15,10 +15,10 @@ matplotlib==x.x.x
 ## Tạo file Docker 'Dockerfile' ngay trong folder chính
 **paste this:**
 
-FROM apache/airflow:2.0.1
-COPY requirements.txt /requirements.txt
-RUN pip install --user --upgrade pip  (update pip version to get the lastest version)
-RUN pup install --no-cache-dir --user -r /requirements.txt ()
+FROM apache/airflow:2.0.1 </br>
+COPY requirements.txt /requirements.txt </br>
+RUN pip install --user --upgrade pip  (update pip version to get the lastest version) </br>
+RUN pup install --no-cache-dir --user -r /requirements.txt () </br>
 
 ## Chạy command interminal
 **Docker xây một image sử dụng Dockerfile ngay trong thư mục hiện tại, đặt tên là extending_airflow, version: latest**

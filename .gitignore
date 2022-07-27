@@ -1,3 +1,4 @@
 airflow_tutorial
 AirflowCommandSetup.txt
-dags/__pycache__
+/dags/__pycache__
+.idea

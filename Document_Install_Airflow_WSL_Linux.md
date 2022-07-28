@@ -22,19 +22,20 @@ sudo nano /etc/wsl.conf   (nano la lenh edit trong linux)
 </br>
 
 [automount]
+</br>
 root = /
+</br>
 options = "metadata"
 
 // Ctrl S to save, Ctrl X to exit
-
-
+</br>
+</br>
 ## install pip
 sudo apt install python3-pip
-
-
-## Install apache-airflow using pip
 </br>
 </br>
+
+## install apache-airflow using pip
 pip3 install "apache-airflow[,,]==2.3.3" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.3/constraints-3.8.txt"
 </br>
 </br>
@@ -42,42 +43,51 @@ pip3 install "apache-airflow[,,]==2.3.3" --constraint "https://raw.githubusercon
 //trong đó:
 </br>
 </br>
-https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt
-
+<pre>https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt </pre>
+</br>
+</br>
 
 ## SET airflow-home
 export AIRFLOW_HOME=~/airflow
-
+</br>
+</br>
 
 ## SET airflow_home permanent (dai han)
 nano ~/.bashrc
 </br>
-//ben trong file bashrc
 </br>
+//ben trong file bashrc
 </br>
 export AIRFLOW_HOME=~/airflow
 </br>
 </br>
 //(relaunch ubuntu)
-
+</br>
+</br>
 
 ## kiem tra airflow_home
-</br>
 echo $AIRFLOW_HOME
+</br>
+</br>
 
 ## Tao tai khoan
-</br>
 airflow users create --username admin --firstname Hieu --lastname Nguyen --role Admin --email nguyenvuhieu2015@gmail.com
+</br>
+</br>
 
 ## Run webserver port 8080
-</br>
 airflow webserver -p 8080
+</br>
+</br>
 
 ## Run scheduler
-</br>
 airflow scheduler
+</br>
+</br>
+
 ------------------------------------------------------------------------------------------
+</br>
 
-IN WINDOW
-
+## IN WINDOW
+</br>
 *Truy cập airflow trên linux thông qua link: \\wsl$\Ubuntu\home\user_name
